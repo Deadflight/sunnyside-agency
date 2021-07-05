@@ -74,32 +74,38 @@
           margin-left: 1rem;
         }
 
-        h3{
-          color: $dark-desaturated-blue;
-          font-family: 'Fraunces', serif;
-          font-weight: 700;
-          font-size: 0.8rem;
-          opacity: 1;
+        .btn-learn{
           cursor: pointer;
-          margin-left: 0.2rem;
-        }
-
-        .link-decoration{
-          cursor: pointer;
-          width: 6rem;
-          height: 0.5rem;
-          border-radius: 0.5rem;
-          margin-top: -0.4rem;
-          opacity: 0.5;
           transition: all 200ms ease-in-out;
-
           &:hover{
-            opacity: 1;
-            transform: scaleX(1.1);
+            transform: scale(1.1);
+
+            .link-decoration{
+              opacity: 1;
+            }
+            
           }
 
-          
+
+          h3{
+            color: $dark-desaturated-blue;
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+
+            margin-left: 0.2rem;
+          }
+  
+          .link-decoration{
+            width: 6rem;
+            height: 0.5rem;
+            border-radius: 0.5rem;
+            margin-top: -0.4rem;
+            opacity: 0.5;          
+          }
         }
+
+        
       }
     }
   }
