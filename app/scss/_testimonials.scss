@@ -1,0 +1,63 @@
+.testimonials{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 5rem;
+
+  @include breakpoint-up(medium){
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 8rem;
+  }
+
+  &-header{
+    text-align: center;
+    color: $grayish-blue;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    padding: 4rem 1rem;
+    padding-bottom: 0rem;
+    font-family: "Fraunces";
+    font-size: 1rem;
+
+    @include breakpoint-up(medium){
+      grid-column: span 3;
+      padding-top: 7rem;
+    }
+  }
+
+
+  &-container{
+    display: grid;
+    justify-items:center;
+    padding-top: 3rem;
+
+    &-image{
+      transform: scale(0.6);
+      border-radius: 10rem;
+    }
+
+    &-text{
+      text-align: center;
+      color: $gray-blue;
+      font-family: "Barlow";
+      font-size: 1.05rem;
+      line-height: 1.6;
+      padding: 0rem 2rem;
+      padding-bottom: 2rem;
+    }
+
+    &-author{
+      font-family: "Fraunces";
+      color: $dark-desaturated-blue;
+    }
+
+    &-job{
+      padding-top: 0.7rem;
+      font-family: "Barlow",sans-serif;
+      font-weight: 700;
+      color: $grayish-blue;
+      font-size: 0.85rem;
+    }
+  }
+}

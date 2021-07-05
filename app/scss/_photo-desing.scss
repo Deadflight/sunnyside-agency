@@ -1,0 +1,64 @@
+.photo-desing{
+  &_container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 36rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+
+
+    h2{
+      font-size: 2rem;
+      font-weight: 900;
+      font-family: 'Fraunces', serif;
+      text-align: center;
+    }
+
+    p{
+      font-family: 'Barlow', serif;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.5rem;
+      margin: 2.8rem 0;
+
+      @include breakpoint-up(medium){
+        padding-left: 10.5rem;
+        padding-right: 10.5rem;
+        line-height: 1.7rem;
+      }
+    }
+
+  }
+
+  .desing{
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+    color: $graphic-design-text;
+    background-size: cover;
+    background-position:center center;
+
+    @include breakpoint-up(medium){
+      background-image: url("../images/desktop/image-graphic-design.jpg");
+      
+    }
+  }
+
+  .photography{
+    background-image: url("../images/mobile/image-photography.jpg");
+    color: $photography-text;
+    background-size: cover;
+    background-position:center center;
+
+    @include breakpoint-up(medium){
+      background-image: url("../images/desktop/image-photography.jpg");
+    }
+  }
+
+  @include breakpoint-up(medium){
+    display: grid;
+    grid-template-columns: repeat(2,50vw);
+  }
+}

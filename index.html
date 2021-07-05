@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./app/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./app/scss/style.css">
+  <title>Sunnyside agency landing page</title>
+</head>
+<body>
+
+  <section class="header">
+    <nav class="header_menu">
+      <img src="./app/images/logo.svg" alt="logo">
+
+      <img src="./app/images/icon-hamburger.svg" alt="menuhamburguer" class="hide-for-desktop" id="btn-hamburger">
+      <div class="header_menu-links hide-for-desktop not-active" id="mobile-menu">
+        <div class="triangle"></div>
+        <div class="links">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">CONTACT</a>
+        </div>
+      </div>
+      <div class="header_links hide-for-mobile">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">CONTACT</a>
+      </div>
+    </nav>
+    <div class="header_content">
+      <h1>WE ARE CREATIVES</h1>
+      <img src="./app/images/icon-arrow-down.svg" alt="arrow">
+    </div>
+  </section>
+
+  <section class="middle-section">
+    <div class="middle-section-container ">
+      <picture class="reverse">
+        <source media="(min-width: 44em)" srcset="./app/images/desktop/image-transform.jpg">
+        <img src="./app/images/mobile/image-transform.jpg">
+      </picture>
+
+      <div class="text-block">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <div class="btn-wrapper">
+          <a href="#">Learn more</a>
+          <div class="link-decoration yellow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-section-container">
+      <picture>
+        <source media="(min-width: 44em)" srcset="./app/images/desktop/image-stand-out.jpg">
+        <img src="./app/images/mobile/image-stand-out.jpg">
+      </picture>
+
+      <div class="text-block">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <div class="btn-wrapper">
+          <a href="#">Learn more</a>
+          <div class="link-decoration red"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo-desing">
+    <div class="photo-desing_container desing">
+      <h2>Graphic design</h2>
+      <p>
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </p>
+    </div>
+    <div class="photo-desing_container photography">
+      <h2>Photography</h2>
+      <p>
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.      </p>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials">
+    <h2 class="testimonials-header">CLIENT TESTIMONIALS</h2>
+
+    <div class="testimonials-container">
+      <img src="./app/images/image-emily.jpg" alt="" class="testimonials-container-image">
+      <p class="testimonials-container-text">
+        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+      </p>
+      <h3 class="testimonials-container-author">Emily R.</h3>
+      <h4 class="testimonials-container-job">Marketing Director</h4>
+    </div>
+
+    <div class="testimonials-container">
+      <img src="./app/images/image-thomas.jpg" alt="" class="testimonials-container-image">
+      <p class="testimonials-container-text">
+        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+      </p>
+      <h3 class="testimonials-container-author">Thomas S.</h3>
+      <h4 class="testimonials-container-job">Chief Operating Officer</h4>
+    </div>
+
+    <div class="testimonials-container">
+      <img src="./app/images/image-jennie.jpg" alt="" class="testimonials-container-image">
+      <p class="testimonials-container-text">
+        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+      </p>
+      <h3 class="testimonials-container-author">Jennie F.</h3>
+      <h4 class="testimonials-container-job">Business Owner</h4>
+    </div>
+  </section>
+
+  <section class="images">
+    <picture>
+      <source media="(min-width: 44em)" srcset="./app/images/desktop/image-gallery-milkbottles.jpg">
+      <img src="./app/images/mobile/image-gallery-milkbottles.jpg">
+    </picture>
+    <picture>
+      <source media="(min-width: 44em)" srcset="./app/images/desktop/image-gallery-orange.jpg">
+      <img src="./app/images/mobile/image-gallery-orange.jpg">
+    </picture>
+    <picture>
+      <source media="(min-width: 44em)" srcset="./app/images/desktop/image-gallery-cone.jpg">
+      <img src="./app/images/mobile/image-gallery-cone.jpg">
+    </picture>
+    <picture>
+      <source media="(min-width: 44em)" srcset="./app/images/desktop/image-gallery-sugarcubes.jpg">
+      <img src="./app/images/mobile/image-gallery-sugar-cubes.jpg">
+    </picture>
+  </section>
+  
+  <section class="footer">
+    <img src="./app/images/logo-footer.svg" alt="logo" class="footer-logo">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+    </div>
+    <div class="footer-contact">
+      <img src="./app/images/icon-facebook.svg" alt="facebook">
+      <img src="./app/images/icon-instagram.svg" alt="instagramm">
+      <img src="./app/images/icon-twitter.svg" alt="twitter">
+      <img src="./app/images/icon-pinterest.svg" alt="pinterest">
+    </div>
+  </section>
+  <script src="./app/js/index.js"></script>
+</body>
+</html>
