@@ -362,6 +362,7 @@ a {
 .photo-desing_container {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   min-height: 36rem;
   display: -webkit-box;
   display: -ms-flexbox;
