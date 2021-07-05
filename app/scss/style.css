@@ -364,6 +364,7 @@ a {
   background-size: cover;
   background-position: center center;
   min-height: 36rem;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
